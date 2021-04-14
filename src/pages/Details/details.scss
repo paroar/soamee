@@ -1,0 +1,13 @@
+.details {
+    @media (min-width: $large) {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    &__back {
+        margin: 1rem;
+        position: absolute;
+        top: 0;
+    }
+}

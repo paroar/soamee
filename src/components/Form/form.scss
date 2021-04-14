@@ -1,0 +1,64 @@
+.form-wrapper {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 2rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgb(134, 134, 134);
+    height: 100vh;
+
+    &__basic-info, &__misc-info{
+        display: grid;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid $prussian-blue;
+        padding: 0.2rem;
+        font-size: large;
+        outline: none;
+    }
+
+    textarea {
+        border: none;
+        resize: none;
+        outline: none;
+        font-size: larger;
+        width: 100%;
+        height: 10rem;
+        margin: 0.5rem 0;
+    }
+
+    .submit{
+        align-self: center;
+        border: none;
+        background-color: $prussian-blue;
+        color: $honeydew;
+        font-size: larger;
+        width: 15rem;
+        cursor: pointer;
+    }
+}
+
+.form__close{
+    position: absolute;
+    margin: 1rem;
+    right: 0;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

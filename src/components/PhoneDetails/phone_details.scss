@@ -1,0 +1,51 @@
+.details-wrapper {
+    margin: 1rem;
+    color: $prussian-blue;
+
+    @media (min-width: $larger) {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+.phone-details {
+    &__actions {
+        cursor: pointer;
+        transform: translateX(-100%);
+        margin: 0.5rem;
+    }
+
+    &-desc {
+        padding: 1rem;
+        border-radius: 0.2rem;
+
+        &-text {
+            margin-bottom: 0.5rem;
+            line-height: 1.5rem;
+            text-transform: capitalize;
+        }
+    }
+
+    &-info {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+
+        @media (min-width: $large) {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+        }
+
+        &__img {
+            max-width: 30rem;
+            align-self: center;
+            margin: auto;
+        }
+
+        &__actions {
+            display: flex;
+            justify-content: space-evenly;
+            cursor: pointer;
+        }
+    }
+}
